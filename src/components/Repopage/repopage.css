@@ -69,3 +69,20 @@
 .repopage-topic-title-repos {
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 750px) {
+  .repopage-header-container {
+    width: initial;
+    display: flex;
+    margin-top: 2rem;
+  }
+  .repopage-body-main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .repopage-topic-title-repos {
+    margin-left: 0.8rem;
+  }
+  .repopage-body-container {
+    margin-right: 2rem;
+  }
+}
