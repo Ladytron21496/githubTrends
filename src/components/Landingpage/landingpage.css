@@ -19,7 +19,7 @@
   padding: 1rem;
   height: 100px;
 }
-.app {
+.landing_app {
   background-color: #0d1117;
   height: 100vh;
   display: flex;
@@ -27,24 +27,24 @@
   flex-direction: column;
   overflow-y: auto;
 }
-.app_title {
+.landing_app_title {
   color: #c9d1d9;
 }
-.app_search_bar {
+.landing_app_search_bar {
   border: 1px solid gray;
   padding: 0.4rem;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
 
-.app_search_container {
+.landing_app_search_container {
   width: 50vw;
 }
-.app_repos_container {
+.landing_app_repos_container {
   margin-bottom: 1.2rem;
 }
 
-.app_search_input {
+.landing_app_search_input {
   background: none;
   outline: none;
   border: none;

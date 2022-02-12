@@ -1,5 +1,6 @@
 import React from "react";
 import "./repocard.css";
+import { useNavigate } from "react-router-dom";
 
 function Repocard({
   title,
@@ -10,7 +11,23 @@ function Repocard({
   language,
   license,
   issues,
+  contributionUrl,
+  topics,
+  repoPage,
+  loginName,
 }) {
+  let navigate = useNavigate();
+  let routeToRepopage = () => {
+    if (!repoPage) {
+      navigate("/repopage", {
+        state: {
+          name: loginName,
+          contributorsUrl: contributionUrl,
+          topicsArray: topics,
+        },
+      });
+    }
+  };
   let convertStarCount = (number) => {
     let SI_SYMBOL = ["", "k", "M", "G", "T", "P", "E"];
     let tier = (Math.log10(Math.abs(number)) / 3) | 0;
@@ -42,7 +59,12 @@ function Repocard({
 
   return (
     <div className="card">
-      <div className="card-header">
+      <div
+        className="card-header"
+        onClick={() => {
+          routeToRepopage();
+        }}
+      >
         <div className="card-title">{title}</div>
         <div className="card-status">{privateRepo ? "Private" : "Public"}</div>
       </div>

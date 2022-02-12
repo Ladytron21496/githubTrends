@@ -1,0 +1,71 @@
+.repopage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+  color: #c9d1d9;
+  background-color: #0d1117;
+}
+.repopage-avatar {
+  height: 7rem;
+  margin-right: 2rem;
+  min-width: 7rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background: url("https://gist.githubusercontent.com/ManulMax/2d20af60d709805c55fd784ca7cba4b9/raw/bcfeac7604f674ace63623106eb8bb8471d844a6/github.gif")
+    center no-repeat;
+}
+.repopage-contributors-avatar-placeholder {
+  height: 3rem;
+  border-radius: 50%;
+  background: url("https://i.stack.imgur.com/frlIf.png") center no-repeat;
+}
+.repopage-header-container {
+  width: 50vw;
+  display: flex;
+  margin-top: 2rem;
+}
+.repopage-title {
+  font-size: 22px;
+}
+.repopage-bio {
+  font-size: 14px;
+  margin-top: 0.1rem;
+}
+.repopage-body-container {
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+.repopage-body-main-container {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.repopage-contributors-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 53rem; */
+  max-width: 16rem;
+}
+.repopage-topics-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 12rem;
+  margin-bottom: 1.5rem;
+}
+.repopage-topic {
+  background-color: #13233a;
+  border: 1px solid #13233a;
+  color: #308df9;
+  font-size: 12px;
+  border-radius: 10px;
+  margin: 0.2rem;
+  padding: 0.2rem 0.5rem;
+}
+.repopage-topic-title {
+  margin-bottom: 0.5rem;
+}
+.repopage-topic-title-repos {
+  margin-bottom: 1rem;
+}
