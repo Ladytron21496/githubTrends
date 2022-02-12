@@ -56,6 +56,7 @@ function Landingpage() {
                 .map((repo) => {
                   return (
                     <Repocard
+                      repoUrl={repo.html_url}
                       repopage={false}
                       topics={repo.topics}
                       contributionUrl={repo.contributors_url}

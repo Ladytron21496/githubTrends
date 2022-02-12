@@ -64,6 +64,8 @@ function Repopage() {
               {reposData.map((repo) => {
                 return (
                   <Repocard
+                    key={repo.id}
+                    repoUrl={repo.html_url ? repo.html_url : null}
                     repoPage={true}
                     language={repo.language}
                     title={repo.name}

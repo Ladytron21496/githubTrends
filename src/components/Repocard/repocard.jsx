@@ -13,6 +13,7 @@ function Repocard({
   issues,
   contributionUrl,
   topics,
+  repoUrl,
   repoPage,
   loginName,
 }) {
@@ -24,8 +25,13 @@ function Repocard({
           name: loginName,
           contributorsUrl: contributionUrl,
           topicsArray: topics,
+          repoUrl: repoUrl,
         },
       });
+    } else {
+      if (repoUrl) {
+        window.open(repoUrl);
+      }
     }
   };
   let convertStarCount = (number) => {
