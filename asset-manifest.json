@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/githubTrends/static/css/main.44914d22.css",
+    "main.css": "/githubTrends/static/css/main.f7a7a8a0.css",
     "main.js": "/githubTrends/static/js/main.5faf729a.js",
     "index.html": "/githubTrends/index.html",
-    "main.44914d22.css.map": "/githubTrends/static/css/main.44914d22.css.map",
+    "main.f7a7a8a0.css.map": "/githubTrends/static/css/main.f7a7a8a0.css.map",
     "main.5faf729a.js.map": "/githubTrends/static/js/main.5faf729a.js.map"
   },
   "entrypoints": [
-    "static/css/main.44914d22.css",
+    "static/css/main.f7a7a8a0.css",
     "static/js/main.5faf729a.js"
   ]
 }
